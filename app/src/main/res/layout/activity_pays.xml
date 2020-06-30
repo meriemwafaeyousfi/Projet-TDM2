@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PaysActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:background="@android:color/black"
+        android:layout_height="220dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/drapeau"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/ic_launcher_background"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="24dp"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="TextView"
+            android:layout_width="0dp" />
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textenyme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="Eymne :" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play / Pause"
+            android:id="@+id/btnPlay"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textpop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="Population :" />
+
+        <TextView
+            android:id="@+id/population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textsur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="Surface :" />
+
+        <TextView
+            android:id="@+id/surface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="Description :"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="3dp"
+        android:text="TextView" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp"
+        android:text="Historique : "
+        android:id="@+id/btnHist"
+        android:layout_gravity="center_horizontal" />
+
+   <ListView
+        android:id="@+id/listHist"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp"
+        android:text="Ressources de pays : "
+        android:id="@+id/btnRess"
+        android:layout_gravity="center_horizontal" />
+
+
+    <ListView
+        android:id="@+id/listRess"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Personalités de pays : "
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold"
+        android:id="@+id/btnPer"
+        android:layout_gravity="center_horizontal" />
+
+
+    <ListView
+        android:id="@+id/listPer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp"
+        android:text="Videos sur le pays : "
+        android:id="@+id/btnVid"
+        android:layout_gravity="center_horizontal" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:visibility="gone"
+        />
+</LinearLayout>
+</ScrollView>
